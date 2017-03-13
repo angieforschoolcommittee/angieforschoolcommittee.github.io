@@ -34,6 +34,12 @@ function addLoadEvent(func) {
 }
 /* ]]> */
 </script>
+<script type="text/javascript">
+function other_val(){
+ var other= document.getElementById("other");
+    other.value=document.getElementById("oamount").value;
+}
+</script>
 <link rel='stylesheet' id='all-css-0-1' href='https://s2.wp.com/_static/??-eJyFj90KwjAMhV/IGgXn8EJ8lq0G161Zw5Iy9va2FgV/mDchCd/JOYGZjQ2j4qhA0bCPNzcKzGwDGSHncfmYtlZkA79l3g0o0KNyYwfzmNZwGyZMe+JGM0F4dQ16pIStyYiPT1Vuu+S1alPity1PKGJSJRfJaJeM/sSjHKX8AQl83xSpgzGoS2p5NV83ixVwbCG9qGEC0cVj5i503h/qqqrr3f7U3wGVApT4' type='text/css' media='all' />
 <link rel='stylesheet' id='screen-css-1-1' href='https://s0.wp.com/wp-content/themes/pub/editor/inc/fontawesome/font-awesome.css?m=1404778013h' type='text/css' media='screen' />
 <link rel='stylesheet' id='editor-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C600%2C700%2C400italic%2C600italic%2C700italic%7CRoboto+Condensed%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
@@ -130,16 +136,20 @@ function addLoadEvent(func) {
 <div>
 <table border="0" cellpadding="5" cellspacing="10">
 <tr>
-<td><input type="radio" name="amount" value="10"> &nbsp; $10</input></td>
-<td><input type="radio" name="amount" value="75"> &nbsp; $75</input></td>
+<td><input type="radio" name="amount" value="100"> &nbsp; $100</input></td>
+<td><input type="radio" name="amount" value="50"> &nbsp; $50</input></td>
+<td><input type="radio" name="amount" value="25"> &nbsp; $25</input></td>
 </tr>
 <tr>
-<td><input type="radio" name="amount" value="25"> &nbsp; $25</input></td>
-<td><input type="radio" name="amount" value="100"> &nbsp; $100</input></td>
-</tr>
-<tr> 
-<td><input type="radio" name="amount" value="50"> &nbsp; $50</input></td>
+<td><input type="radio" name="amount" value="150"> &nbsp; $150</input></td>
+<td><input type="radio" name="amount" value="200"> &nbsp; $200</input></td>
 <td><input type="radio" name="amount" value="250"> &nbsp; $250</input></td>
+</tr>
+<tr>
+<td colspan="2"></td>
+<td><input type="radio" id="other" name="amount" value="other">
+&nbsp; Or other amount: <input type="text" id="oamount" name="oamount" onchange="other_val()" />
+</td>
 </tr>
 </table>
 </div>
